@@ -4,14 +4,32 @@ $(document).ready( () => {
         const data = $(this).serializeArray() 
         const {status, answer} = math.solve(data[0].value)
         $("#answer").text(answer)
-        $(this).trigger("reset")
+        if(status){
+            //copy answer to clipboard 
+            const textFeild = document.querySelector("textarea[name='question']")
+            textFeild.value = answer
+            textFeild.select() 
+            textFeild.setSelectionRange(0, 99999)
+            navigator.clipboard.writeText(textFeild.value)
+            Snackbar.show({ 
+                text: `
+                    <div class="flex justify-center items-center gap-2"> 
+                        <i style="font-size: 1.25rem; color: rgba(34, 197, 94, 1);" class="fad fa-info-circle"></i>
+                        <span>Answer Copied Clipboard</span>
+                    </div>
+                `, 
+                duration: 3000,
+                showAction: false
+            })  
+            $(this).trigger("reset")
+        }
     })
 
     const math = {
         solve: (str) => {
             const operators = [
                 {
-                    type: ["added", "total", "plus", "increase", "+"], 
+                    type: ["added", "total", "plus", "increase"], 
                     op: "+"
                 }, 
                 {
