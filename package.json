@@ -1,0 +1,20 @@
+{
+  "name": "math-question",
+  "version": "1.0.0",
+  "description": "A Application that can solve any mathematical questions like \"1 plus 1\"",
+  "main": "",
+  "scripts": {
+    "build": "NODE_ENV=production npx tailwindcss -i ./tailwindcss/tailwind.css -o ./public/css/tailwind.css --minify",
+    "devcss": "npx tailwindcss -i ./tailwindcss/tailwind.css -o ./public/css/tailwind.css -w"
+  },
+  "keywords": [
+    "math solver"
+  ],
+  "author": "Jayke770",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19"
+  }
+}
