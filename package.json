@@ -4,7 +4,7 @@
   "description": "A Application that can solve any mathematical questions like \"1 plus 1\"",
   "main": "",
   "scripts": {
-    "start": "npx serve",
+    "start": "npx serve ",
     "build": "NODE_ENV=production npx tailwindcss -i ./tailwindcss/tailwind.css -o ./public/css/tailwind.css --minify",
     "devcss": "npx tailwindcss -i ./tailwindcss/tailwind.css -o ./public/css/tailwind.css -w"
   },
