@@ -29,11 +29,11 @@ $(document).ready( () => {
         solve: (str) => {
             const operators = [
                 {
-                    type: ["added", "total", "plus", "increase"], 
+                    type: ["added", "total", "plus", "increase", "and", "increase by", "take in"], 
                     op: "+"
                 }, 
                 {
-                    type: ["minus", "decrease", "take away", "difference"], 
+                    type: ["minus", "decrease", "take away", "difference", "take out"], 
                     op: "-"
                 }, 
                 {
