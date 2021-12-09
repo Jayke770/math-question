@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" class="theme-color" content="#161b22">
+    <meta name="description" content="A Program that can solve math question like this " 1 plus 1 "">
+    <title>Math Questions Solver</title>
+    <link rel="stylesheet" href="public/css/tailwind.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/node-snackbar/0.1.16/snackbar.min.css" integrity="sha512-pKdIPri9vb1aqcci9Rsl1xO7n74wHe5+RMcqRufN36EnXVtOsbct0VKDtBdhAnSCqZeny2jiZBSpXp0iDSzZ+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://pro.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-snackbar/0.1.16/snackbar.min.js" integrity="sha512-iILlngu0qmiyIkOH6MV1RWSya+DL2uzo0cb/nKR4hqwz9H+Xnop1++f8TMw1j5CdbutXGkBUyfRUfg/hmNBfZg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class="bg-darkBlue-primary m-0 p-0 overflow-hidden">
+    <div class="flex justify-center items-center h-screen w-screen sm:p-2">
+        <div class="animate__animated animate__fadeInUp transition-all w-[400px] border-[0.1px] border-gray-500 sm:w-full h-auto py-2 px-2.5 bg-darkBlue-secondary shadow-md rounded-md">
+            <div class="flex items-center justify-center py-3 px-2">
+                <span class="text-gray-200 font-medium text-xl">Enter Math Question</span>
+            </div>
+            <div class="flex flex-col gap-2 py-2 px-2.5 mt-3">
+                <form id="question" class="flex flex-col gap-2">
+                    <div class="container">
+                        <textarea name="question" required class="rounded-md transition-all w-full border-[.1px] bg-transparent border-gray-600 focus:outline-none p-1.5 focus:ring-2 focus:ring-offset-2 focus:ring-offset-darkBlue-secondary focus:ring-indigo-500 text-base text-gray-300"></textarea>
+                    </div>
+                    <div id="answer-div" class="container grid grid-cols-2">
+                        <div class="flex justify-start items-center">
+                            <span class="text-gray-300 text-base">Answer</span>
+                        </div>
+                        <div class="flex justify-end items-center">
+                            <span id="answer" class="text-gray-300 text-base"></span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <button class="w-full bg-indigo-800 py-2 rounded-md focus:outline-none focus:ring-offset-darkBlue-secondary focus:ring-offset-2 focus:ring-2 focus:ring-indigo-800 text-white transition-all" type="submit">Check Answer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="public/js/index.js"></script>
+</body>
+</html>
