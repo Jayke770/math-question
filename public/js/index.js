@@ -37,7 +37,7 @@ $(document).ready( () => {
                     op: "-"
                 }, 
                 {
-                    type: ["multiplied by", "product", "multiply"], 
+                    type: ["multiplied by", "product", "multiply", "by"], 
                     op: "*"
                 }, 
                 {
