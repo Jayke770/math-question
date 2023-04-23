@@ -19,6 +19,6 @@
     "tailwindcss": "^2.2.19"
   },
   "dependencies": {
-    "serve": "^13.0.2"
+    "serve": "^14.2.0"
   }
 }
